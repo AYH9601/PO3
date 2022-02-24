@@ -7,6 +7,9 @@
 ul, ol, li {list-style: none;}
 a {text-decoration: none;}
 
+body {
+    background-color: rgb(233, 233, 233);
+}
 #header {
     .headerTop {
         padding: 0 50px 0 50px;
@@ -48,11 +51,12 @@ a {text-decoration: none;}
     .headerBot {
         width: 100%;
         height: 100px;
-        background-color: aquamarine;
+        background-color: #fff;
         padding: 0px 50px 0px 50px;
         display: flex;
         justify-content: space-between;
         .botLeft {
+            cursor: pointer;
             h1 {
                 font: bold 35px/1 "Lato";
                 letter-spacing: 5px;
@@ -64,6 +68,7 @@ a {text-decoration: none;}
             }
         }
         .botCenter {
+            transform: translateX(61px);
             ul {
                 li {
                     cursor: pointer;
@@ -87,6 +92,7 @@ a {text-decoration: none;}
                 width: 250px;
                 height: 50px;
                 border-radius: 50px;
+                background-color: rgb(233, 233, 233);
             }
             input::placeholder {
                 text-align: center;
@@ -106,5 +112,17 @@ a {text-decoration: none;}
                 }
             }
         }
+    }
+}
+
+#mainOne {
+
+}
+
+#footer {
+    .footerTop {
+        width: 100%;
+        height: 300px;
+        background-color: #333;
     }
 }
