@@ -57,5 +57,37 @@ a {
     line-height: 100px; }
     #header .headerBot .botLeft h1::first-letter {
       color: dodgerblue; }
+  #header .headerBot .botCenter ul li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px 15px 0px 15px;
+    font: bold 20px/1 "Lato";
+    line-height: 100px;
+    transition: 0.2s; }
+    #header .headerBot .botCenter ul li:hover {
+      color: dodgerblue;
+      transition: 0.2s;
+      box-shadow: 0 -4px 0 0 dodgerblue inset; }
+  #header .headerBot .botRight {
+    line-height: 100px; }
+    #header .headerBot .botRight input[type=text] {
+      border: none;
+      width: 250px;
+      height: 50px;
+      border-radius: 50px; }
+    #header .headerBot .botRight input::placeholder {
+      text-align: center;
+      font: bold 15px/1 "Lato";
+      color: #555;
+      line-height: 50px; }
+    #header .headerBot .botRight i {
+      cursor: pointer;
+      font-size: 30px;
+      color: #555;
+      transform: translateY(7px);
+      transition: 0.2s; }
+      #header .headerBot .botRight i:hover {
+        color: dodgerblue;
+        transition: 0.2s; }
 
 /*# sourceMappingURL=style.css.map */
