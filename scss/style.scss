@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap');
+
 
 //reset
 * {margin: 0; padding: 0; box-sizing: border-box;}
@@ -11,6 +13,7 @@ a {text-decoration: none;}
         width: 100%;
         height: 50px;
         background-color: #000;
+        &::after {content: ""; display: block; clear: both;}
         .left {
             float: left;
             cursor: pointer;
@@ -29,11 +32,34 @@ a {text-decoration: none;}
                 padding-right: 20px;
                 margin-right: 20px;
                 border-right: 1.5px solid #fff;
+                font: bold 15px/1 "Lato";
+                letter-spacing: 1px;
                 line-height: 50px;
+
                 &:last-child {
                     padding-right: 0px;
                     margin-right: 0px;
                     border-right: none;
+                }
+            }
+        }
+    }
+
+    .headerBot {
+        width: 100%;
+        height: 100px;
+        background-color: aquamarine;
+        padding: 0px 50px 0px 50px;
+        display: flex;
+        justify-content: space-between;
+        .botLeft {
+            h1 {
+                font: bold 35px/1 "Lato";
+                letter-spacing: 5px;
+                color: #555;
+                line-height: 100px;
+                &::first-letter {
+                    color: dodgerblue;
                 }
             }
         }
