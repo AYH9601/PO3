@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3438be3ebb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/swiper.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -46,15 +49,52 @@
 
             <div class="booking">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <input type="text" placeholder="Departure">
+                        <i class="fa-solid fa-rocket"></i>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Destination">
+                        <i class="fa-solid fa-rocket"></i>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Boarding date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Passenger">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Seat">
+                        <i class="fa-solid fa-chair"></i>
+                    </li>
+                    <li>
+                        <button>
+                            Search
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
+    </section>
+
+    <section id="mainTwo">
+        <div class="spaceSector">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        
     </section>
 
     <footer id="footer">
