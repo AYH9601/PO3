@@ -125,6 +125,15 @@ body {
       font: bold 20px/1 "Lato";
       color: #fff;
       letter-spacing: 2px; }
+    #mainOne .oneInner h2 {
+      margin-top: 30px;
+      font: bold 40px/1 "Orbitron";
+      color: #fff; }
+    #mainOne .oneInner .time {
+      display: inline-block;
+      font: bold 13px/2 "Orbitron";
+      color: #fff;
+      border-bottom: 3px solid crimson; }
     #mainOne .oneInner .booking {
       width: 100%;
       height: 150px;
@@ -188,6 +197,12 @@ body {
         background-image: url(../img/space1.jpg); }
       #mainTwo .spaceSector .swiper-slide:nth-of-type(2) {
         background-image: url(../img/space2.jpg); }
+      #mainTwo .spaceSector .swiper-slide:nth-of-type(3) {
+        background-image: url(../img/space3.jpg); }
+      #mainTwo .spaceSector .swiper-slide:nth-of-type(4) {
+        background-image: url(../img/space4.jpg); }
+      #mainTwo .spaceSector .swiper-slide:nth-of-type(5) {
+        background-image: url(../img/space5.jpg); }
 
 #footer {
   background-color: #111; }
