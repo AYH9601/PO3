@@ -128,7 +128,8 @@ body {
     #mainOne .oneInner h2 {
       margin-top: 30px;
       font: bold 40px/1 "Orbitron";
-      color: #fff; }
+      color: #fff;
+      letter-spacing: 8px; }
     #mainOne .oneInner .time {
       display: inline-block;
       font: bold 13px/2 "Orbitron";
@@ -149,19 +150,27 @@ body {
         width: calc(100% / 6);
         height: 150px;
         line-height: 150px; }
-        #mainOne .oneInner .booking ul li input[type=text] {
+        #mainOne .oneInner .booking ul li select, #mainOne .oneInner .booking ul li input[type=date] {
           border: none;
           height: 40px;
+          width: 150px;
           border-bottom: 2px solid #555;
           transition: 0.2s; }
-          #mainOne .oneInner .booking ul li input[type=text]:hover {
+          #mainOne .oneInner .booking ul li select:hover, #mainOne .oneInner .booking ul li input[type=date]:hover {
             border-bottom: 2px solid crimson;
             transition: 0.2s; }
-        #mainOne .oneInner .booking ul li input::placeholder {
+        #mainOne .oneInner .booking ul li option {
+          border: none;
+          background-color: #333;
           font: bold 15px/1 "Lato";
+          color: #fff;
           padding-left: 10px;
           line-height: 40px;
           letter-spacing: 1px; }
+        #mainOne .oneInner .booking ul li option:invalid {
+          color: #000; }
+        #mainOne .oneInner .booking ul li option[disabled] {
+          display: none; }
         #mainOne .oneInner .booking ul li i {
           font-size: 18px;
           color: #555;

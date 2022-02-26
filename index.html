@@ -9,8 +9,9 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/swiper.js"></script>
+    <script defer src="js/membership.js"></script>
     <script defer src="js/clock.js"></script>
-    <title>Document</title>
+    <title>PORTAL .Inc Dive Into Infinite Possibilities</title>
 </head>
 <body>
     <header id="header">
@@ -52,27 +53,60 @@
             <div class="booking">
                 <ul>
                     <li>
-                        <input type="text" placeholder="Departure">
+                        <select name="departure" id="departure" required>
+                            <option disabled selected value="">Departure</option>
+                            <option value="earth">Earth</option>
+                            <option value="mars">Mars</option>
+                            <option value="venus">Venus</option>
+                        </select>
+                        <!-- <input type="text" placeholder="Departure"> -->
                         <i class="fa-solid fa-rocket"></i>
                     </li>
                     <li>
-                        <input type="text" placeholder="Destination">
+                        <select name="destination" id="destination" required>
+                            <option disabled selected value="">Destination</option>
+                            <option value="Crab Nebula">Crab Nebula</option>
+                            <option value="Butterfly Cluster">Butterfly Cluster</option>
+                            <option value="Titan">Titan</option>
+                            <option value="Origae-6">Origae-6</option>
+                            <option value="LV-426">LV-426</option>
+                            <option value="Alpha Centauri">Alpha Centauri</option>
+                            <option value="Pandora">Pandora</option>
+                        </select>
+                        <!-- <input type="text" placeholder="Destination"> -->
                         <i class="fa-solid fa-rocket"></i>
                     </li>
                     <li>
-                        <input type="text" placeholder="Boarding date">
-                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="date" min="2122-01-01" max="2123-01-01" name="date" step="1">
+                        <!-- <i class="fa-solid fa-calendar-days"></i> -->
                     </li>
                     <li>
-                        <input type="text" placeholder="Passenger">
+                        <select name="passenger" id="passenger" required>
+                            <option disabled selected value="">Passenger</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="More">More</option>
+                        </select>
+                        <!-- <input type="text" placeholder="Passenger"> -->
                         <i class="fa-solid fa-user-astronaut"></i>
                     </li>
                     <li>
-                        <input type="text" placeholder="Seat">
+                        <select name="seat" id="seat" required>
+                            <option disabled selected value="">Seat</option>
+                            <option value="economy">Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First</option>
+                            <option value="family">Family</option>
+                        </select>
+                        <!-- <input type="text" placeholder="Seat"> -->
                         <i class="fa-solid fa-chair"></i>
                     </li>
                     <li>
-                        <button>
+                        <button onclick="booking();">
                             Search
                         </button>
                     </li>

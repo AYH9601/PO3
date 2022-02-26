@@ -154,6 +154,7 @@ body {
             margin-top: 30px;
             font: bold 40px/1 "Orbitron";
             color: #fff;
+            letter-spacing: 8px;
         }
 
         .time {
@@ -187,9 +188,10 @@ body {
                     height: 150px;
                     line-height: 150px;
 
-                    input[type=text] {
+                    select, input[type=date] {
                         border: none;
                         height: 40px;
+                        width: 150px;
                         border-bottom: 2px solid #555;
                         transition: 0.2s;
                         &:hover {
@@ -197,11 +199,22 @@ body {
                             transition: 0.2s;
                         }
                     }
-                    input::placeholder {
+                    option {
+                        border: none;
+                        background-color: #333;
                         font: bold 15px/1 "Lato";
+                        color: #fff;
                         padding-left: 10px;
                         line-height: 40px;
                         letter-spacing: 1px;
+                    }
+
+                    option:invalid {
+                        color: #000;
+                    }
+
+                    option[disabled] {
+                        display: none;
                     }
 
                     i {
