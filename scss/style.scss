@@ -275,7 +275,7 @@ body {
 
     .spaceSector {
         width: 100%;
-        
+
         .swiper-slide {
             padding: 15px 15px 15px 15px;
             p {
@@ -294,6 +294,44 @@ body {
             &:nth-of-type(3) {background-image: url(../img/space3.jpg);}
             &:nth-of-type(4) {background-image: url(../img/space4.jpg);}
             &:nth-of-type(5) {background-image: url(../img/space5.jpg);}
+        }
+    }
+}
+
+#mainThree {
+    background-color: #fff;
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    justify-content: center;
+    .mainthreeInner {
+        padding: 0px 60px 0px 60px;
+        text-align: center;
+        width: 400px;
+        i {
+            font-size: 40px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font: bold 20px/1 "Lato";
+            color: #000;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font: bold 20px/1.5 "Lato";
+            color: #555;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        p {
+            cursor: pointer;
+            font: bold 20px/1 "Lato";
+            color: dodgerblue;
+            transition: 0.2s;
+            &:hover {
+                color: deepskyblue;
+                transition: 0.2s;
+            }
         }
     }
 }
