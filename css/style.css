@@ -260,11 +260,51 @@ body {
       letter-spacing: 1px;
       margin-bottom: 20px; }
     #mainThree .mainthreeInner p {
+      display: inline-block;
       cursor: pointer;
       font: bold 20px/1 "Lato";
       color: dodgerblue;
       transition: 0.2s; }
       #mainThree .mainthreeInner p:hover {
+        color: deepskyblue;
+        transition: 0.2s; }
+
+#mainFour {
+  background-color: #fff;
+  padding: 100px 50px 100px 50px; }
+  #mainFour .mainfourInner {
+    padding-top: 150px;
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/spaceship_horizon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center; }
+    #mainFour .mainfourInner .mainFourText {
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+      #mainFour .mainfourInner .mainFourText > h1 {
+        display: inline-block;
+        font: bold 30px/1 "Lato"; }
+      #mainFour .mainfourInner .mainFourText .caseFour {
+        letter-spacing: 3px;
+        font: bold 30px/1 "Lato";
+        color: #fff; }
+        #mainFour .mainfourInner .mainFourText .caseFour::first-letter {
+          color: dodgerblue; }
+    #mainFour .mainfourInner h2 {
+      letter-spacing: 1px;
+      font: bold 50px/1 "Lato";
+      margin-bottom: 20px; }
+    #mainFour .mainfourInner p {
+      margin-top: 30px;
+      display: inline-block;
+      cursor: pointer;
+      font: bold 20px/1 "Lato";
+      color: dodgerblue;
+      transition: 0.2s; }
+      #mainFour .mainfourInner p:hover {
         color: deepskyblue;
         transition: 0.2s; }
 
