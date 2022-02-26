@@ -237,9 +237,33 @@ body {
       #mainTwo .spaceSector .swiper-slide:nth-of-type(5) {
         background-image: url(../img/space5.jpg); }
 
+#banner {
+  width: 100%;
+  height: 400px;
+  background: url(../img/space8.jpg) no-repeat center/cover fixed;
+  filter: opacity(0.8);
+  text-align: center;
+  padding: 120px 0px 120px 0px; }
+  #banner h1 {
+    font: bold 50px/1 "Lato";
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 10px; }
+  #banner h2 {
+    font: bold 20px/1 "Lato";
+    letter-spacing: 2px;
+    color: #fff; }
+  #banner p {
+    font: bold 35px/1 "Lato";
+    letter-spacing: 5px;
+    color: #fff;
+    line-height: 100px; }
+    #banner p::first-letter {
+      color: dodgerblue; }
+
 #mainThree {
   background-color: #fff;
-  padding: 100px 50px 100px 50px;
+  padding: 200px 50px 100px 50px;
   display: flex;
   justify-content: center; }
   #mainThree .mainthreeInner {
@@ -280,6 +304,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(1.05);
     text-align: center; }
     #mainFour .mainfourInner .mainFourText {
       letter-spacing: 1px;
