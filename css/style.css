@@ -151,6 +151,7 @@ body {
         height: 150px;
         line-height: 150px; }
         #mainOne .oneInner .booking ul li select, #mainOne .oneInner .booking ul li input[type=date] {
+          cursor: pointer;
           border: none;
           height: 40px;
           width: 150px;
@@ -172,7 +173,7 @@ body {
         #mainOne .oneInner .booking ul li option[disabled] {
           display: none; }
         #mainOne .oneInner .booking ul li i {
-          font-size: 18px;
+          font-size: 15px;
           color: #555;
           transform: translateX(-25px); }
         #mainOne .oneInner .booking ul li button {
