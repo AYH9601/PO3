@@ -68,62 +68,64 @@ body {
             }
         }
         .botCenter, .menu {
-                transform: translateX(61px);
+                // transform: translateX(61px);
+                // margin: 0 auto;
+                // text-align: center;
+                // ul {
+                //     li {
+                //         float: left;
+                //         width: 150px;
+                //         position: relative;
+                //         transition: 0.2s;
+                //         a {
+                //             font: bold 20px/100px "Lato";
+                //             transition: 0.2s;
+                //         }
 
-                margin: 0 auto;
-                text-align: center;
-                ul {
-                    li {
-                        float: left;
-                        width: 150px;
-                        position: relative;
+                //         &:hover {
+                //             color: dodgerblue;
+                //             transition: 0.2s;
+                //             box-shadow: 0 -4px 0 0 dodgerblue inset;
+                //             a {
+                //                 color: dodgerblue;
+                //                 transition: 0.2s;
+                //             }
+                //             ul {
+                //                 display: block;
+                //             }
+                //         }
+
+                //         >ul {
+
+                //                     display: none;
+                //                     transform: translateX(-1000px);
+                //                     overflow: hidden;
+                //                     width: 100vw;
+                //                     height: 300px;
+                //                     position: absolute;
+                //                     font-size: 10px;
+                //                     background-color: #fff;
+
+                //         }
+                //     }
+                // }
+
+            transform: translateX(61px);
+            ul {
+                li {
+                    cursor: pointer;
+                    display: inline-block;
+                    margin: 0px 15px 0px 15px;
+                    font: bold 20px/1 "Lato";
+                    line-height: 100px;
+                    transition: 0.2s;
+                    &:hover {
+                        color: dodgerblue;
                         transition: 0.2s;
-                        a {
-                            font: bold 20px/100px "Lato";
-                            transition: 0.2s;
-                        }
-
-                        &:hover {
-                            color: dodgerblue;
-                            transition: 0.2s;
-                            box-shadow: 0 -4px 0 0 dodgerblue inset;
-                            a {
-                                color: dodgerblue;
-                                transition: 0.2s;
-                            }
-                            ul {
-                                display: block;
-                            }
-                        }
-
-                        >ul {
-
-                                    display: none;
-                                    width: 100%;
-                                    position: absolute;
-                                    font-size: 10px;
-                                    background-color: #fff;
-
-                        }
+                        box-shadow: 0 -4px 0 0 dodgerblue inset;
                     }
                 }
-
-            // transform: translateX(61px);
-            // ul {
-            //     li {
-            //         cursor: pointer;
-            //         display: inline-block;
-            //         margin: 0px 15px 0px 15px;
-            //         font: bold 20px/1 "Lato";
-            //         line-height: 100px;
-            //         transition: 0.2s;
-            //         &:hover {
-            //             color: dodgerblue;
-            //             transition: 0.2s;
-            //             box-shadow: 0 -4px 0 0 dodgerblue inset;
-            //         }
-            //     }
-            // }
+            }
         }
 
         .botRight {
@@ -157,7 +159,7 @@ body {
 }
 
 #mainOne {
-    display: none;
+    // display: none;
 
     width: 100%;
     height: calc(100vh - 150px);
@@ -188,9 +190,19 @@ body {
         }
 
         p {
+            display: inline-block;
             font: bold 20px/1 "Lato";
             color: #fff;
             letter-spacing: 2px;
+        }
+        .mainOnePortal {
+            display: inline-block;
+            font: bold 20px/1 "Lato";
+            color: #fff;
+            letter-spacing: 4px;
+            &::first-letter {
+                color: dodgerblue;
+            }
         }
 
         h2 {

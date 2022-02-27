@@ -63,32 +63,18 @@ body {
       #header .headerBot .botLeft h1::first-letter {
         color: dodgerblue; }
   #header .headerBot .botCenter, #header .headerBot .menu {
-    transform: translateX(61px);
-    margin: 0 auto;
-    text-align: center; }
+    transform: translateX(61px); }
     #header .headerBot .botCenter ul li, #header .headerBot .menu ul li {
-      float: left;
-      width: 150px;
-      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0px 15px 0px 15px;
+      font: bold 20px/1 "Lato";
+      line-height: 100px;
       transition: 0.2s; }
-      #header .headerBot .botCenter ul li a, #header .headerBot .menu ul li a {
-        font: bold 20px/100px "Lato";
-        transition: 0.2s; }
       #header .headerBot .botCenter ul li:hover, #header .headerBot .menu ul li:hover {
         color: dodgerblue;
         transition: 0.2s;
         box-shadow: 0 -4px 0 0 dodgerblue inset; }
-        #header .headerBot .botCenter ul li:hover a, #header .headerBot .menu ul li:hover a {
-          color: dodgerblue;
-          transition: 0.2s; }
-        #header .headerBot .botCenter ul li:hover ul, #header .headerBot .menu ul li:hover ul {
-          display: block; }
-      #header .headerBot .botCenter ul li > ul, #header .headerBot .menu ul li > ul {
-        display: none;
-        width: 100%;
-        position: absolute;
-        font-size: 10px;
-        background-color: #fff; }
   #header .headerBot .botRight {
     line-height: 100px; }
     #header .headerBot .botRight input[type=text] {
@@ -113,7 +99,6 @@ body {
         transition: 0.2s; }
 
 #mainOne {
-  display: none;
   width: 100%;
   height: calc(100vh - 150px);
   background-color: #000;
@@ -137,9 +122,17 @@ body {
       letter-spacing: 3px;
       margin-bottom: 30px; }
     #mainOne .oneInner p {
+      display: inline-block;
       font: bold 20px/1 "Lato";
       color: #fff;
       letter-spacing: 2px; }
+    #mainOne .oneInner .mainOnePortal {
+      display: inline-block;
+      font: bold 20px/1 "Lato";
+      color: #fff;
+      letter-spacing: 4px; }
+      #mainOne .oneInner .mainOnePortal::first-letter {
+        color: dodgerblue; }
     #mainOne .oneInner h2 {
       margin-top: 30px;
       font: bold 40px/1 "Orbitron";
