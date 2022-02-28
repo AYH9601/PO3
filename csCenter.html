@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico">
     <script defer src="js/swiper.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script defer src="js/form.js"></script>
     <title>PORTAL .Inc Dive Into Infinite Possibilities</title>
 </head>
 <body>
@@ -79,12 +80,41 @@
             <input type="text" placeholder="Search for your space">
         </div>
     </section>
-
+    
     <section id="csFive">
         <h1>Get support</h1>
         <h2>You can choose a classification and see which solution works best for you.</h2><br>
         <h3>Get Started Now ></h3><br>
         <h4>Download the support app ></h4>
+    </section>
+
+    <section id="csSix">
+        <h1>Contact us Directly</h1>
+        <h2>Can't find the service you're looking for? You can send us an email directly.</h2>
+
+        <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <ul>
+                <li>
+                    <input type="text" required placeholder="Name" name="to_name">
+                </li>
+                <li>
+                    <input type="text" required placeholder="PhoneNumber" name="contact">
+                </li>
+                <li>
+                    <input type="text" required placeholder="Your Email" name="from_name">
+                </li>
+                <li>
+                    <textarea required placeholder="Write Your Message" name="message_html" cols="20" rows="5"></textarea>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="check" value="check">
+                        I agree to the collection and use of <br>personal information for reply only.
+                    </label>
+                    <input type="submit" value="PORTAL">
+                </li>
+            </ul>
+        </form>
     </section>
 
     <footer id="footer">
@@ -94,7 +124,8 @@
                     <h2>Station Information</h2>
                     <h2>PORTAL Journal</h2> <br>
                     <h2>Login</h2> <br>
-                    <h2>Membership</h2>
+                    <h2>Membership</h2><br>
+                    <a href="csCenter.html"><h2>CS Center</h2></a>
                 </div>
                 <div class="inner1 case">
                     <h2>Flight Booking</h2>
@@ -129,7 +160,7 @@
         </div>
         
         <div class="footerBot">
-            <h1>PORTAL</h1>
+            <a href="index.html"><h1>PORTAL</h1></a>
         </div>
     </footer>
 </body>
