@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap");
+#csOne {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/space13.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative; }
+  #csOne h1 {
+    font: bold 40px/1 "Lato";
+    color: #fff;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #csOne h1::first-letter {
+      color: dodgerblue; }
+  #csOne h2 {
+    font: bold 25px/1 "Lato";
+    color: #fff;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+#csTwo {
+  text-align: center; }
+  #csTwo .csTwoIcon {
+    float: left; }
+
 * {
   margin: 0;
   padding: 0;
@@ -25,13 +58,18 @@ body {
   #header .headerTop .left {
     float: left;
     cursor: pointer;
-    width: 90px;
+    width: 40px;
     height: 40px;
-    background-image: url(../img/weylandlogo.jpg);
+    background-image: url(../img/portal.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transform: translateY(5px); }
+    transform: translateY(5px);
+    filter: grayscale(0.5);
+    transition: 0.2s; }
+    #header .headerTop .left:hover {
+      filter: grayscale(0);
+      transition: 0.2s; }
   #header .headerTop .right {
     float: right; }
     #header .headerTop .right a {

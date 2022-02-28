@@ -1,0 +1,39 @@
+#csOne {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/space13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+
+    h1 {
+        font: bold 40px/1 "Lato";
+        color: #fff;
+        letter-spacing: 5px;
+        position: absolute;
+        top:40%; 
+        left:50%; 
+        transform:translate(-50%,-50%); 
+        &::first-letter {
+            color: dodgerblue;
+        }
+    }
+    h2 {
+        font: bold 25px/1 "Lato";
+        color: #fff;
+        letter-spacing: 2px;
+        position: absolute;
+        top:50%; 
+        left:50%; 
+        transform:translate(-50%,-50%); 
+    }
+}
+
+#csTwo {
+    text-align: center;
+    .csTwoIcon {
+        float: left;
+    }
+}

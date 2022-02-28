@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap');
 
+@import "csCenter.scss";
 
 //reset
 * {margin: 0; padding: 0; box-sizing: border-box;}
@@ -20,13 +21,19 @@ body {
         .left {
             float: left;
             cursor: pointer;
-            width: 90px;
+            width: 40px;
             height: 40px;
-            background-image: url(../img/weylandlogo.jpg);
+            background-image: url(../img/portal.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             transform: translateY(5px);
+            filter: grayscale(0.5);
+            transition: 0.2s;
+            &:hover {
+                filter: grayscale(0);
+                transition: 0.2s;
+            }
         }
         .right {
             float: right;
