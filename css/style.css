@@ -66,8 +66,8 @@
       #csThree .csIcon .csThreeIcon:nth-of-type(2) {
         border-left: 1px solid #999;
         border-right: 1px solid #999; }
-      #csThree .csIcon .csThreeIcon:hover i, #csThree .csIcon .csThreeIcon:hover p {
-        color: dodgerblue;
+      #csThree .csIcon .csThreeIcon:hover p {
+        box-shadow: 0 -1px 0 0 dodgerblue inset;
         transition: 0.2s; }
       #csThree .csIcon .csThreeIcon i {
         font-size: 40px;
@@ -75,9 +75,56 @@
         margin-bottom: 20px;
         transition: 0.2s; }
       #csThree .csIcon .csThreeIcon p {
+        display: inline-block;
         font: bold 15px/1 "Lato";
         color: dodgerblue;
         transition: 0.2s; }
+
+#csFour {
+  text-align: center;
+  padding: 50px 0px 50px 0px; }
+  #csFour h1 {
+    font: bold 40px/1 "Lato";
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  #csFour input[type=text] {
+    width: 40%;
+    height: 50px;
+    border: 1px solid #999;
+    border-radius: 5px; }
+  #csFour input::placeholder {
+    text-align: center;
+    font: bold 20px/50px "Lato"; }
+
+#csFive {
+  width: 100%;
+  height: 400px;
+  background: url(../img/space12.png) no-repeat center/cover fixed;
+  text-align: center;
+  position: relative;
+  padding: 150px 400px 0px 400px;
+  text-align: left;
+  color: #fff;
+  letter-spacing: 2px; }
+  #csFive h1 {
+    font: bold 40px/1 "Lato";
+    margin-bottom: 20px; }
+  #csFive h2 {
+    font: bold 15px/1 "Lato";
+    background-color: #000;
+    padding: 5px 0px 5px 0px;
+    display: inline-block;
+    margin-bottom: 20px; }
+  #csFive h3 {
+    margin-bottom: 20px; }
+  #csFive h3, #csFive h4 {
+    cursor: pointer;
+    font: bold 15px/1 "Lato";
+    color: crimson;
+    transition: 0.2s;
+    background-color: #000;
+    padding: 5px 0px 5px 0px;
+    display: inline-block; }
 
 * {
   margin: 0;
