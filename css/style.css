@@ -28,9 +28,56 @@
     transform: translate(-50%, -50%); }
 
 #csTwo {
-  text-align: center; }
-  #csTwo .csTwoIcon {
-    float: left; }
+  text-align: center;
+  padding: 100px 0 100px 0;
+  border-bottom: 1px solid #999; }
+  #csTwo .csIcon {
+    display: flex;
+    justify-content: center; }
+    #csTwo .csIcon .csTwoIcon {
+      width: 80px;
+      float: left;
+      margin: 0 50px 0 50px;
+      cursor: pointer; }
+      #csTwo .csIcon .csTwoIcon:hover i, #csTwo .csIcon .csTwoIcon:hover p {
+        color: dodgerblue;
+        transition: 0.2s; }
+      #csTwo .csIcon .csTwoIcon i {
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 20px;
+        transition: 0.2s; }
+      #csTwo .csIcon .csTwoIcon p {
+        font: bold 20px/1 "Lato";
+        color: #333;
+        transition: 0.2s; }
+
+#csThree {
+  text-align: center;
+  padding: 50px 0 50px 0;
+  border-bottom: 1px solid #999; }
+  #csThree .csIcon {
+    display: flex;
+    justify-content: center; }
+    #csThree .csIcon .csThreeIcon {
+      float: left;
+      width: 300px;
+      cursor: pointer; }
+      #csThree .csIcon .csThreeIcon:nth-of-type(2) {
+        border-left: 1px solid #999;
+        border-right: 1px solid #999; }
+      #csThree .csIcon .csThreeIcon:hover i, #csThree .csIcon .csThreeIcon:hover p {
+        color: dodgerblue;
+        transition: 0.2s; }
+      #csThree .csIcon .csThreeIcon i {
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 20px;
+        transition: 0.2s; }
+      #csThree .csIcon .csThreeIcon p {
+        font: bold 15px/1 "Lato";
+        color: dodgerblue;
+        transition: 0.2s; }
 
 * {
   margin: 0;

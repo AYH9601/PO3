@@ -33,7 +33,69 @@
 
 #csTwo {
     text-align: center;
-    .csTwoIcon {
-        float: left;
+    padding: 100px 0 100px 0;
+    border-bottom: 1px solid #999;
+    .csIcon {
+        display: flex;
+        justify-content: center;
+        .csTwoIcon {
+            width: 80px;
+            float: left;
+            margin: 0 50px 0 50px;
+            cursor: pointer;
+            &:hover {
+                i, p {
+                    color: dodgerblue;
+                    transition: 0.2s;
+                }
+            }
+            i {
+                font-size: 40px;
+                color: #333;
+                margin-bottom: 20px;
+                transition: 0.2s;
+            }
+            p {
+                font: bold 20px/1 "Lato";
+                color: #333;
+                transition: 0.2s;
+            }
+        }
+    }
+}
+
+#csThree {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    border-bottom: 1px solid #999;
+    .csIcon {
+        display: flex;
+        justify-content: center;
+        .csThreeIcon {
+            float: left;
+            width: 300px;
+            cursor: pointer;
+            &:nth-of-type(2) {
+                border-left: 1px solid #999;
+                border-right: 1px solid #999;
+            }
+            &:hover {
+                i, p {
+                    color: dodgerblue;
+                    transition: 0.2s;
+                }
+            }
+            i {
+                font-size: 40px;
+                color: #333;
+                margin-bottom: 20px;
+                transition: 0.2s;
+            }
+            p {
+                font: bold 15px/1 "Lato";
+                color: dodgerblue;
+                transition: 0.2s;
+            }
+        }
     }
 }
