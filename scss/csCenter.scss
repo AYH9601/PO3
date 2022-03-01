@@ -49,6 +49,11 @@
                     transition: 0.2s;
                 }
             }
+            &:first-child {
+                i {
+                    transform: translateX(8px);
+                }
+            }
             i {
                 font-size: 40px;
                 color: #333;
@@ -213,8 +218,12 @@
                 &:last-child {
                     margin-top: 20px;
                     text-align: center;
+                    input[type=checkbox] {
+                        cursor: pointer;
+                    }
                     label {
-                        display: block;
+                        cursor: pointer;
+                        display: inline-block;
                         font: bold 15px/1 "Lato";
                         margin-bottom: 20px;
                     }
@@ -235,6 +244,57 @@
                             transition: 0.25s;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+#csSeven {
+    border-top: 1px solid #999;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+    .csSevenInner {
+        display: inline-block;
+        // background-color: #fff;
+        width: 900px;
+        // height: 800px;
+        text-align: left;
+        h1 {
+            margin-bottom: 20px;
+            font: bold 30px/1 "Lato";
+            color: #333;
+            a {
+                >p {
+                    margin-right: 5px;
+                    background: #000;
+                    padding: 3px 5px 5px 5px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    font: bold 30px/1 "Lato";
+                    color: #fff;
+                    letter-spacing: 5px;
+                    &::first-letter {
+                        color: dodgerblue;
+                    }
+                }
+            }
+        }
+        ul {
+            li {
+                display: inline-block;
+                cursor: pointer;
+                font: bold 20px/1 "Lato";
+                color: dodgerblue;
+                transition: 0.2s;
+                margin-bottom: 20px;
+                &:hover {
+                    box-shadow: 0 -1px 0 0 dodgerblue inset;
+                    transition: 0.2s;
+                }
+                &:last-child {
+                    margin-bottom: 0px;
                 }
             }
         }
