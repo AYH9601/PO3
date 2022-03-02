@@ -283,7 +283,22 @@ input, label {
     background-image: url(../img/manaflow.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    margin-bottom: 50px; }
+  #memberOne h1 {
+    font: bold 40px/1 "Lato";
+    color: #000;
+    margin-bottom: 30px; }
+    #memberOne h1 p {
+      display: inline-block;
+      font: bold 40px/1 "Lato";
+      letter-spacing: 5px;
+      color: #555; }
+      #memberOne h1 p::first-letter {
+        color: dodgerblue; }
+  #memberOne h2 {
+    font: bold 30px/1 "Lato";
+    color: #555; }
 
 .join {
   width: 100%;
