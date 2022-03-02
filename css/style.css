@@ -274,7 +274,7 @@ input, label {
       transition: 0.2s; }
 
 #memberOne {
-  padding-top: 100px;
+  padding: 100px 0px 100px 0px;
   text-align: center; }
   #memberOne .memberOnePic {
     display: inline-block;
@@ -299,6 +299,43 @@ input, label {
   #memberOne h2 {
     font: bold 30px/1 "Lato";
     color: #555; }
+
+#memberTwo {
+  display: flex;
+  justify-content: center; }
+  #memberTwo .memberTwoLeft, #memberTwo .memberTwoRight {
+    float: left;
+    width: 460px;
+    height: 400px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 40px; }
+    #memberTwo .memberTwoLeft h3, #memberTwo .memberTwoRight h3 {
+      font: bold 30px/1 "Lato";
+      color: #000;
+      margin-bottom: 25px; }
+    #memberTwo .memberTwoLeft h4, #memberTwo .memberTwoRight h4 {
+      font: bold 20px/1.5 "Lato";
+      color: #555;
+      letter-spacing: 1px; }
+  #memberTwo .memberTwoLeftPic {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/membership1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px; }
+  #memberTwo .memberTwoRightPic {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/membership2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px; }
 
 .join {
   width: 100%;
