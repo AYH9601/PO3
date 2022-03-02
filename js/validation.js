@@ -9,7 +9,7 @@ btnSubmit.addEventListener("click", e=>{
    //email
    if(!isEmail("email")) e.preventDefault(); 
    //select
-   if(!isSelect("edu")) e.preventDefault(); 
+   if(!isSelect("planet")) e.preventDefault(); 
    //gender
    if(!isCheck("gender")) e.preventDefault(); 
    //hobby
