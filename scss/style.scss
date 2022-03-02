@@ -11,6 +11,7 @@ a {text-decoration: none;}
 body {
     background-color: rgb(233, 233, 233);
 }
+
 #header {
     .headerTop {
         padding: 0 50px 0 50px;
@@ -75,64 +76,67 @@ body {
             }
         }
         .botCenter, .menu {
-                // transform: translateX(61px);
-                // margin: 0 auto;
-                // text-align: center;
-                // ul {
-                //     li {
-                //         float: left;
-                //         width: 150px;
-                //         position: relative;
-                //         transition: 0.2s;
-                //         a {
-                //             font: bold 20px/100px "Lato";
-                //             transition: 0.2s;
-                //         }
-
-                //         &:hover {
-                //             color: dodgerblue;
-                //             transition: 0.2s;
-                //             box-shadow: 0 -4px 0 0 dodgerblue inset;
-                //             a {
-                //                 color: dodgerblue;
-                //                 transition: 0.2s;
-                //             }
-                //             ul {
-                //                 display: block;
-                //             }
-                //         }
-
-                //         >ul {
-
-                //                     display: none;
-                //                     transform: translateX(-1000px);
-                //                     overflow: hidden;
-                //                     width: 100vw;
-                //                     height: 300px;
-                //                     position: absolute;
-                //                     font-size: 10px;
-                //                     background-color: #fff;
-
-                //         }
-                //     }
-                // }
-
-            transform: translateX(61px);
-            ul {
-                li {
-                    cursor: pointer;
-                    display: inline-block;
-                    margin: 0px 15px 0px 15px;
-                    font: bold 20px/1 "Lato";
-                    line-height: 100px;
-                    transition: 0.2s;
-                    &:hover {
-                        color: dodgerblue;
+                transform: translateX(61px);
+                margin: 0 auto;
+                text-align: center;
+                ul {
+                    li {
+                        cursor: pointer;
+                        float: left;
+                        width: 150px;
+                        position: relative;
                         transition: 0.2s;
-                        box-shadow: 0 -4px 0 0 dodgerblue inset;
+                        a {
+                            font: bold 20px/100px "Lato";
+                            transition: 0.2s;
+                        }
+
+                        &:hover {
+                            color: dodgerblue;
+                            transition: 0.2s;
+                            box-shadow: 0 -4px 0 0 dodgerblue inset;
+                            a {
+                                color: dodgerblue;
+                                transition: 0.2s;
+                            }
+                            ul {
+                                display: block;
+                            }
+                        }
+
+                        >ul {
+                            z-index: 5;
+                            display: none;
+                            // transform: translateX(-1000px);
+                            overflow: hidden;
+                            // width: 100vw;
+                            height: 300px;
+                            position: absolute;
+                            font-size: 10px;
+                            background-color: #fff;
+                            >li {
+                                float: none;
+                            }
+                        }
                     }
                 }
-            }
+
+            // transform: translateX(61px);
+            // ul {
+            //     li {
+            //         cursor: pointer;
+            //         display: inline-block;
+            //         margin: 0px 15px 0px 15px;
+            //         font: bold 20px/1 "Lato";
+            //         line-height: 100px;
+            //         transition: 0.2s;
+            //         &:hover {
+            //             color: dodgerblue;
+            //             transition: 0.2s;
+            //             box-shadow: 0 -4px 0 0 dodgerblue inset;
+            //         }
+            //     }
+            // }
         }
 
         .botRight {
@@ -167,7 +171,7 @@ body {
 
 #mainOne {
     // display: none;
-
+    z-index: 1;
     width: 100%;
     height: calc(100vh - 150px);
     background-color: #000;
@@ -252,6 +256,7 @@ body {
 
                     select, input[type=date] {
                         cursor: pointer;
+                        font: bold 15px/1 "Lato";
                         border: none;
                         height: 40px;
                         width: 150px;
@@ -265,7 +270,7 @@ body {
                     option {
                         border: none;
                         background-color: #333;
-                        font: bold 15px/1 "Lato";
+                        font: normal 15px/1 "Lato";
                         color: #fff;
                         padding-left: 10px;
                         line-height: 40px;
@@ -522,6 +527,11 @@ body {
                     &:hover {
                         transition: 0.2s;
                         color: #fff;
+                    }
+                }
+                &:last-child {
+                    h2 {
+                        cursor: default;
                     }
                 }
             }

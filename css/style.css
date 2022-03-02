@@ -293,18 +293,37 @@ body {
       #header .headerBot .botLeft h1::first-letter {
         color: dodgerblue; }
   #header .headerBot .botCenter, #header .headerBot .menu {
-    transform: translateX(61px); }
+    transform: translateX(61px);
+    margin: 0 auto;
+    text-align: center; }
     #header .headerBot .botCenter ul li, #header .headerBot .menu ul li {
       cursor: pointer;
-      display: inline-block;
-      margin: 0px 15px 0px 15px;
-      font: bold 20px/1 "Lato";
-      line-height: 100px;
+      float: left;
+      width: 150px;
+      position: relative;
       transition: 0.2s; }
+      #header .headerBot .botCenter ul li a, #header .headerBot .menu ul li a {
+        font: bold 20px/100px "Lato";
+        transition: 0.2s; }
       #header .headerBot .botCenter ul li:hover, #header .headerBot .menu ul li:hover {
         color: dodgerblue;
         transition: 0.2s;
         box-shadow: 0 -4px 0 0 dodgerblue inset; }
+        #header .headerBot .botCenter ul li:hover a, #header .headerBot .menu ul li:hover a {
+          color: dodgerblue;
+          transition: 0.2s; }
+        #header .headerBot .botCenter ul li:hover ul, #header .headerBot .menu ul li:hover ul {
+          display: block; }
+      #header .headerBot .botCenter ul li > ul, #header .headerBot .menu ul li > ul {
+        z-index: 5;
+        display: none;
+        overflow: hidden;
+        height: 300px;
+        position: absolute;
+        font-size: 10px;
+        background-color: #fff; }
+        #header .headerBot .botCenter ul li > ul > li, #header .headerBot .menu ul li > ul > li {
+          float: none; }
   #header .headerBot .botRight {
     line-height: 100px; }
     #header .headerBot .botRight input[type=text] {
@@ -329,6 +348,7 @@ body {
         transition: 0.2s; }
 
 #mainOne {
+  z-index: 1;
   width: 100%;
   height: calc(100vh - 150px);
   background-color: #000;
@@ -390,6 +410,7 @@ body {
         line-height: 150px; }
         #mainOne .oneInner .booking ul li select, #mainOne .oneInner .booking ul li input[type=date] {
           cursor: pointer;
+          font: bold 15px/1 "Lato";
           border: none;
           height: 40px;
           width: 150px;
@@ -401,7 +422,7 @@ body {
         #mainOne .oneInner .booking ul li option {
           border: none;
           background-color: #333;
-          font: bold 15px/1 "Lato";
+          font: normal 15px/1 "Lato";
           color: #fff;
           padding-left: 10px;
           line-height: 40px;
@@ -614,6 +635,8 @@ body {
           #footer .footerTop .footerInner .inner1 i:hover {
             transition: 0.2s;
             color: #fff; }
+        #footer .footerTop .footerInner .inner1:last-child h2 {
+          cursor: default; }
   #footer .footerMid {
     width: 100%;
     height: 50px;
