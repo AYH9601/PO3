@@ -238,114 +238,117 @@ a {
 body {
   background-color: #e9e9e9; }
 
-#header .headerTop {
-  padding: 0 50px 0 50px;
-  width: 100%;
-  height: 50px;
-  background-color: #000; }
-  #header .headerTop::after {
-    content: "";
-    display: block;
-    clear: both; }
-  #header .headerTop .left {
-    float: left;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/portal.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: translateY(5px);
-    filter: grayscale(0.5);
-    transition: 0.2s; }
-    #header .headerTop .left:hover {
-      filter: grayscale(0);
-      transition: 0.2s; }
-  #header .headerTop .right {
-    float: right; }
-    #header .headerTop .right a {
-      color: #fff;
-      padding-right: 20px;
-      margin-right: 20px;
-      border-right: 1.5px solid #fff;
-      font: bold 15px/1 "Lato";
-      letter-spacing: 1px;
-      line-height: 50px; }
-      #header .headerTop .right a:last-child {
-        padding-right: 0px;
-        margin-right: 0px;
-        border-right: none; }
-#header .headerBot {
-  width: 100%;
-  height: 100px;
-  background-color: #fff;
-  padding: 0px 50px 0px 50px;
-  display: flex;
-  justify-content: space-between; }
-  #header .headerBot .botLeft {
-    cursor: pointer; }
-    #header .headerBot .botLeft h1 {
-      font: bold 35px/1 "Lato";
-      letter-spacing: 5px;
-      color: #555;
-      line-height: 100px; }
-      #header .headerBot .botLeft h1::first-letter {
-        color: dodgerblue; }
-  #header .headerBot .botCenter, #header .headerBot .menu {
-    transform: translateX(61px);
-    margin: 0 auto;
-    text-align: center; }
-    #header .headerBot .botCenter ul li, #header .headerBot .menu ul li {
-      cursor: pointer;
+#header {
+  position: relative;
+  z-index: 99; }
+  #header .headerTop {
+    padding: 0 50px 0 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #000; }
+    #header .headerTop::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #header .headerTop .left {
       float: left;
-      width: 150px;
-      position: relative;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/portal.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transform: translateY(5px);
+      filter: grayscale(0.5);
       transition: 0.2s; }
-      #header .headerBot .botCenter ul li a, #header .headerBot .menu ul li a {
-        font: bold 20px/100px "Lato";
+      #header .headerTop .left:hover {
+        filter: grayscale(0);
         transition: 0.2s; }
-      #header .headerBot .botCenter ul li:hover, #header .headerBot .menu ul li:hover {
-        color: dodgerblue;
-        transition: 0.2s;
-        box-shadow: 0 -4px 0 0 dodgerblue inset; }
-        #header .headerBot .botCenter ul li:hover a, #header .headerBot .menu ul li:hover a {
+    #header .headerTop .right {
+      float: right; }
+      #header .headerTop .right a {
+        color: #fff;
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1.5px solid #fff;
+        font: bold 15px/1 "Lato";
+        letter-spacing: 1px;
+        line-height: 50px; }
+        #header .headerTop .right a:last-child {
+          padding-right: 0px;
+          margin-right: 0px;
+          border-right: none; }
+  #header .headerBot {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between; }
+    #header .headerBot .botLeft {
+      cursor: pointer; }
+      #header .headerBot .botLeft h1 {
+        font: bold 35px/1 "Lato";
+        letter-spacing: 5px;
+        color: #555;
+        line-height: 100px; }
+        #header .headerBot .botLeft h1::first-letter {
+          color: dodgerblue; }
+    #header .headerBot .botCenter, #header .headerBot .menu {
+      transform: translateX(61px);
+      margin: 0 auto;
+      text-align: center; }
+      #header .headerBot .botCenter ul li, #header .headerBot .menu ul li {
+        cursor: pointer;
+        float: left;
+        width: 150px;
+        position: relative;
+        transition: 0.2s; }
+        #header .headerBot .botCenter ul li a, #header .headerBot .menu ul li a {
+          font: bold 20px/100px "Lato";
+          transition: 0.2s; }
+        #header .headerBot .botCenter ul li:hover, #header .headerBot .menu ul li:hover {
+          color: dodgerblue;
+          transition: 0.2s;
+          box-shadow: 0 -4px 0 0 dodgerblue inset; }
+          #header .headerBot .botCenter ul li:hover a, #header .headerBot .menu ul li:hover a {
+            color: dodgerblue;
+            transition: 0.2s; }
+          #header .headerBot .botCenter ul li:hover ul, #header .headerBot .menu ul li:hover ul {
+            display: block; }
+        #header .headerBot .botCenter ul li > ul, #header .headerBot .menu ul li > ul {
+          z-index: 5;
+          display: none;
+          overflow: hidden;
+          height: 300px;
+          position: absolute;
+          font-size: 10px;
+          background-color: #fff; }
+          #header .headerBot .botCenter ul li > ul > li, #header .headerBot .menu ul li > ul > li {
+            float: none; }
+    #header .headerBot .botRight {
+      line-height: 100px; }
+      #header .headerBot .botRight input[type=text] {
+        border: none;
+        width: 250px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #e9e9e9; }
+      #header .headerBot .botRight input::placeholder {
+        text-align: center;
+        font: bold 15px/1 "Lato";
+        color: #555;
+        line-height: 50px; }
+      #header .headerBot .botRight i {
+        cursor: pointer;
+        font-size: 30px;
+        color: #555;
+        transform: translateY(7px);
+        transition: 0.2s; }
+        #header .headerBot .botRight i:hover {
           color: dodgerblue;
           transition: 0.2s; }
-        #header .headerBot .botCenter ul li:hover ul, #header .headerBot .menu ul li:hover ul {
-          display: block; }
-      #header .headerBot .botCenter ul li > ul, #header .headerBot .menu ul li > ul {
-        z-index: 5;
-        display: none;
-        overflow: hidden;
-        height: 300px;
-        position: absolute;
-        font-size: 10px;
-        background-color: #fff; }
-        #header .headerBot .botCenter ul li > ul > li, #header .headerBot .menu ul li > ul > li {
-          float: none; }
-  #header .headerBot .botRight {
-    line-height: 100px; }
-    #header .headerBot .botRight input[type=text] {
-      border: none;
-      width: 250px;
-      height: 50px;
-      border-radius: 50px;
-      background-color: #e9e9e9; }
-    #header .headerBot .botRight input::placeholder {
-      text-align: center;
-      font: bold 15px/1 "Lato";
-      color: #555;
-      line-height: 50px; }
-    #header .headerBot .botRight i {
-      cursor: pointer;
-      font-size: 30px;
-      color: #555;
-      transform: translateY(7px);
-      transition: 0.2s; }
-      #header .headerBot .botRight i:hover {
-        color: dodgerblue;
-        transition: 0.2s; }
 
 #mainOne {
   z-index: 1;
@@ -434,7 +437,8 @@ body {
         #mainOne .oneInner .booking ul li i {
           font-size: 15px;
           color: #555;
-          transform: translateX(-25px); }
+          transform: translateX(-25px);
+          transition: 0.2s; }
         #mainOne .oneInner .booking ul li button {
           cursor: pointer;
           border: none;
