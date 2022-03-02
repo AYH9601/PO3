@@ -176,12 +176,13 @@ input, label { vertical-align: middle; }
                     background-color: dodgerblue;
                     margin:10px; 
                     font:bold 14px/40px "Lato"; 
+                    letter-spacing: 1px;
                     color:#fff; 
                     cursor:pointer; 
                     transition:0.2s; 
                     &:hover {
-                            background:crimson;
-                            transition:0.2s; 
+                        background:crimson;
+                        transition:0.2s; 
                     }
                 }
             }
@@ -195,13 +196,14 @@ input, label { vertical-align: middle; }
                     border: none;
                     border-radius: 5px;
                     font: bold 20px/60px "Lato";
+                    color: #555;
                 }
                 input[type=radio]{
                     margin-right:30px; 
                 }
                 label {
                     font: bold 20px/1 "Lato";
-                    color: #333;
+                    color: #555;
                 }
                 textarea{
                     border: none;
