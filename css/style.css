@@ -244,7 +244,7 @@ input, label {
   width: 100%;
   height: 50px;
   background-color: #fff;
-  border-bottom: 1px solid #999; }
+  border-bottom: 2px solid dodgerblue; }
   .memberHeaderBot::after {
     display: block;
     content: "";
@@ -302,7 +302,8 @@ input, label {
 
 #memberTwo {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 100px; }
   #memberTwo .memberTwoLeft, #memberTwo .memberTwoRight {
     float: left;
     width: 460px;
@@ -336,6 +337,24 @@ input, label {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 30px; }
+
+#memberBanner {
+  width: 100%;
+  height: 400px;
+  background: url(../img/space14.png) no-repeat center/cover fixed;
+  text-align: center; }
+  #memberBanner h1 {
+    font: bold 40px/1 "Lato";
+    letter-spacing: 1px;
+    line-height: 300px;
+    color: #fff; }
+  #memberBanner p {
+    font: bold 35px/1 "Lato";
+    letter-spacing: 5px;
+    color: #fff;
+    transform: translateY(-100px); }
+    #memberBanner p::first-letter {
+      color: dodgerblue; }
 
 .join {
   width: 100%;
