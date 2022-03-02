@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap');
 
 @import "csCenter.scss";
+@import "membership.scss";
 
 //reset
 * {margin: 0; padding: 0; box-sizing: border-box;}
@@ -90,6 +91,7 @@ body {
                         transition: 0.2s;
                         a {
                             font: bold 20px/100px "Lato";
+                            color: #555;
                             transition: 0.2s;
                         }
 
