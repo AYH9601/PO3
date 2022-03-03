@@ -199,13 +199,28 @@ input, label { vertical-align: middle; }
                     font: bold 20px/60px "Lato";
                     color: #555;
                 }
+                select {
+                    cursor: pointer;
+                    option {
+                        background-color: #333;
+                        color: #fff;
+                    }
+                    option[disabled] {
+                        display: none;
+                    }
+                }
                 input[type=radio]{
-                    margin-right:30px; 
+                    cursor: pointer;
+                    margin-right:15px; 
+                    transform: translateY(5px);
                 }
                 label {
+                    cursor: pointer;
                     font: bold 20px/1 "Lato";
                     color: #555;
+                    margin-right: 30px;
                 }
+
                 textarea{
                     border: none;
                     border-radius: 5px;
@@ -223,6 +238,10 @@ input, label { vertical-align: middle; }
                     color:crimson; 
                     margin-top:5px; 
                 }
+            }
+            .gender {
+                display: flex;
+                justify-content: center;
             }
         }
     }

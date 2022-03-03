@@ -398,11 +398,22 @@ input, label {
         border-radius: 5px;
         font: bold 20px/60px "Lato";
         color: #555; }
+      .join .inner table td select {
+        cursor: pointer; }
+        .join .inner table td select option {
+          background-color: #333;
+          color: #fff; }
+        .join .inner table td select option[disabled] {
+          display: none; }
       .join .inner table td input[type=radio] {
-        margin-right: 30px; }
+        cursor: pointer;
+        margin-right: 15px;
+        transform: translateY(5px); }
       .join .inner table td label {
+        cursor: pointer;
         font: bold 20px/1 "Lato";
-        color: #555; }
+        color: #555;
+        margin-right: 30px; }
       .join .inner table td textarea {
         border: none;
         border-radius: 5px;
@@ -417,6 +428,9 @@ input, label {
         font: bold 12px/1 "Lato";
         color: crimson;
         margin-top: 5px; }
+      .join .inner table .gender {
+        display: flex;
+        justify-content: center; }
 
 * {
   margin: 0;
