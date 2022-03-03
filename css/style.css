@@ -315,7 +315,8 @@ input, label {
     #memberTwo .memberTwoLeft h3, #memberTwo .memberTwoRight h3 {
       font: bold 30px/1 "Lato";
       color: #000;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      letter-spacing: 1px; }
     #memberTwo .memberTwoLeft h4, #memberTwo .memberTwoRight h4 {
       font: bold 20px/1.5 "Lato";
       color: #555;

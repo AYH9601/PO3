@@ -10,10 +10,12 @@ btnSubmit.addEventListener("click", e=>{
    if(!isEmail("email")) e.preventDefault(); 
    //select
    if(!isSelect("planet")) e.preventDefault(); 
+
    //gender
-   if(!isCheck("gender")) e.preventDefault(); 
+   // if(!isCheck("gender")) e.preventDefault(); 
+
    //hobby
-   if(!isCheck("hobby")) e.preventDefault(); 
+   // if(!isCheck("hobby")) e.preventDefault(); 
    //comments
    if(!isTxt("comments", 20)) e.preventDefault(); 
 }); 
@@ -33,7 +35,7 @@ function isTxt(name, len){
       if(errMsgs.length>0) input.closest("td").querySelector("p").remove(); 
 
       const errMsg = document.createElement("p"); 
-      errMsg.append(`입력항목을 ${len}글자 이상 입력하세요`); 
+      errMsg.append(`Please enter ${len} or more characters.`); 
       input.closest("td").append(errMsg); 
       return false; 
    }
@@ -53,7 +55,7 @@ function isEmail(name){
       if(errMsgs.length>0) input.closest("td").querySelector("p").remove(); 
 
       const errMsg = document.createElement("p"); 
-      errMsg.append("@를 포함한 전체 이메일 주소를 입력해주세요"); 
+      errMsg.append("Please enter your full email address including @."); 
       input.closest("td").append(errMsg); 
       return false; 
    }
@@ -76,7 +78,7 @@ function isCheck(name){
       if(errMsgs.length>0) inputs[0].closest("td").querySelector("p").remove(); 
 
       const errMsg = document.createElement("p"); 
-      errMsg.append("필수입력항목을 체크해주세요"); 
+      errMsg.append("Please check the required fields."); 
       inputs[0].closest("td").append(errMsg); 
 
       return false; 
@@ -103,7 +105,7 @@ function isPwd(name1, name2, len){
       if(errMsgs.length>0) pwd1.closest("td").querySelector("p").remove(); 
 
       const errMsg = document.createElement("p"); 
-      errMsg.append(`비밀번호는 ${len}글자 이상 영문, 숫자, 특수문자를 포함해서 동일하게 입력하세요`); 
+      errMsg.append(`Enter a password of ${len} or more characters, including English, numeric, and special characters.`);
       pwd1.closest("td").append(errMsg);
       return false; 
    }
@@ -123,7 +125,7 @@ function isSelect(name){
       if(errMsgs.length >0) sel.closest("td").querySelector("p").remove(); 
 
       const errMsg = document.createElement("p"); 
-      errMsg.append("필수항목을 선택해 주세요"); 
+      errMsg.append("Please select a required item."); 
       sel.closest("td").append(errMsg); 
 
       return false; 
