@@ -432,6 +432,52 @@ input, label {
         display: flex;
         justify-content: center; }
 
+#resultPage {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  #resultPage .resultPageImage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/space15.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: brightness 2s linear alternate infinite; }
+  #resultPage .resultPageText {
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #resultPage .resultPageText h1 {
+      font: bold 60px/1 "Lato";
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 20px; }
+    #resultPage .resultPageText h2 {
+      font: bold 20px/1 "Lato";
+      color: #fff;
+      letter-spacing: 1.5px;
+      margin-bottom: 50px; }
+    #resultPage .resultPageText p {
+      font: bold 40px/1 "Lato";
+      color: #fff;
+      letter-spacing: 4px;
+      margin-bottom: 300px; }
+      #resultPage .resultPageText p::first-letter {
+        color: dodgerblue; }
+    #resultPage .resultPageText a {
+      font: bold 20px/1 "Lato";
+      letter-spacing: 2px;
+      color: crimson;
+      border-bottom: 2px solid crimson; }
+
+@keyframes brightness {
+  0% {
+    filter: brightness(50%); }
+  100% {
+    filter: brightness(100%); } }
 * {
   margin: 0;
   padding: 0;
