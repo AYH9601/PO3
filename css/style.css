@@ -852,6 +852,9 @@ body {
         color: deepskyblue;
         transition: 0.2s; }
 
+#mainFiveVideo {
+  background-color: #fff; }
+
 #footer {
   background-color: #111; }
   #footer .footerTop {
