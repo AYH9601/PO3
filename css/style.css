@@ -854,18 +854,70 @@ body {
 
 #mainFiveVideo {
   padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #fff;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
+  #mainFiveVideo h1 {
+    font: bold 30px/1 "Lato";
+    margin-bottom: 20px; }
+  #mainFiveVideo h2 {
+    font: bold 20px/1 "Lato";
+    color: #333;
+    margin-bottom: 80px; }
   #mainFiveVideo .inner .vidList {
-    height: 1000px;
+    height: 600px;
     text-align: center; }
     #mainFiveVideo .inner .vidList article {
       background-color: #000;
       width: 447px;
       height: 240px;
-      display: inline-block; }
+      display: inline-block;
+      overflow: hidden; }
       #mainFiveVideo .inner .vidList article img {
-        width: 447px; }
+        width: 447px;
+        transition: 0.25s; }
+        #mainFiveVideo .inner .vidList article img:hover {
+          transform: scale(1.1);
+          transition: 0.25s; }
+  #mainFiveVideo figure {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    padding: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #mainFiveVideo figure .btnClose {
+      cursor: pointer;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      color: #fff;
+      font: bold 20px/1 "poppins";
+      transition: 0.25s; }
+      #mainFiveVideo figure .btnClose:hover {
+        color: crimson;
+        transition: 0.25s; }
+  #mainFiveVideo .btnMore {
+    display: block;
+    text-align: center;
+    background-color: dodgerblue;
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    font: bold 15px/60px "poppins";
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.25s; }
+    #mainFiveVideo .btnMore:hover {
+      background-color: deepskyblue;
+      transition: 0.25s; }
 
 #footer {
   background-color: #111; }
