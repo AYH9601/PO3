@@ -853,7 +853,19 @@ body {
         transition: 0.2s; }
 
 #mainFiveVideo {
-  background-color: #fff; }
+  padding-top: 100px;
+  background-color: #fff;
+  width: 100%; }
+  #mainFiveVideo .inner .vidList {
+    height: 1000px;
+    text-align: center; }
+    #mainFiveVideo .inner .vidList article {
+      background-color: #000;
+      width: 447px;
+      height: 240px;
+      display: inline-block; }
+      #mainFiveVideo .inner .vidList article img {
+        width: 447px; }
 
 #footer {
   background-color: #111; }

@@ -496,10 +496,25 @@ body {
 }
 
 #mainFiveVideo {
+    padding-top: 100px;
     background-color: #fff;
-    .vidList {
-        
+    width: 100%;
+    .inner {
+        .vidList {
+            height: 1000px;
+            text-align: center;
+            article {
+                background-color: #000;
+                width: 447px;
+                height: 240px;
+                display: inline-block;
+                img {
+                    width: 447px;
+                }
+            }
+        }
     }
+
 }
 
 #footer {
