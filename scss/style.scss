@@ -525,8 +525,10 @@ body {
                 img {
                     width: 447px;
                     transition: 0.25s;
+                    filter: grayscale(0.3);
                     &:hover {
                         transform: scale(1.1);
+                        filter: grayscale(0);
                         transition: 0.25s;
                     }
                 }

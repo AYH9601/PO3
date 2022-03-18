@@ -876,9 +876,11 @@ body {
       overflow: hidden; }
       #mainFiveVideo .inner .vidList article img {
         width: 447px;
-        transition: 0.25s; }
+        transition: 0.25s;
+        filter: grayscale(0.3); }
         #mainFiveVideo .inner .vidList article img:hover {
           transform: scale(1.1);
+          filter: grayscale(0);
           transition: 0.25s; }
   #mainFiveVideo figure {
     width: 100%;
